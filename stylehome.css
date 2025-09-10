@@ -1,3 +1,13 @@
+:root {
+    --color1: #332921;
+    --color2: #554C45;
+    --color3: #807369;
+    --color4: #AA8A6F;
+    --color5: #D59967;
+    --color6: #FFA052;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -9,7 +19,7 @@ header {
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    background-color: rgb(112, 112, 112) ;
+    background-color: var(--color6);
     margin: 0px;
     padding:10px 20px;
     color: white;
@@ -38,18 +48,25 @@ nav {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    background-color: var(--color4);
+}
+
+#home {
+    font-family: arial black;
 }
 
 .sidenav a {
     display: flex;
-    background-color: lightgrey;
-    width: calc(100% - 40px);
+    background-color: var(--color4);
+    width: calc(100% - 30px);
     border-bottom: 2px solid black;
     margin: 0px;
     justify-content: start;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 20px;
     cursor: pointer;
-
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
 }
 
 
@@ -57,17 +74,28 @@ main {
     grid-area: content;
     border: 2px solid black;
     text-align: center;
-    /* padding: 20px;  */
+    background-color: var(--color1);
+    color: white;
+}
+
+main p {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+
 }
 
 footer {
+    padding-left: 20px;
     grid-area: footer;
     border: 2px solid black;    
+    background-color: var(--color6);
 }
 
-img {
+#homebild {
     max-width: 100%;
-    height: auto;
+
 }
 
 
