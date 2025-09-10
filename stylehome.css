@@ -26,13 +26,24 @@ header {
     color: black;
     font-family: arial black;
     height: 100%;
+    font-size: ;
+}
+
+#left {
+    text-decoration: none;
+    color: inherit; /* übernimmt die Textfarbe vom Header */
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
 }
 
 #container {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 90% 10%;
 
     grid-template-areas: 
         "header header"
@@ -41,10 +52,6 @@ header {
     ;
 }
 
-header {
-    grid-area: header;
-    border: 2px solid black;
-}
 
 nav {
     grid-area: navigation;
@@ -95,6 +102,10 @@ footer {
     border: 2px solid black;    
     background-color: var(--color6);
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
 }
 
 #homebild {
@@ -109,5 +120,7 @@ footer {
         transition: margin-top 0.5s ease;
     }
 }
+
+
 
 
