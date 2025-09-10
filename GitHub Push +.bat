@@ -17,8 +17,10 @@ if errorlevel 1 goto error
 git push
 if errorlevel 1 goto error
 
-:: Wenn alles erfolgreich war → Fenster schließen
+:: Auf neusten Stand bringen 
 git pull
+
+:: Wenn alles erfolgreich war → Fenster schließen
 exit
 
 :error
