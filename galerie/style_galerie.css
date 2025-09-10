@@ -1,0 +1,125 @@
+:root {
+    --color1: #332921;
+    --color2: #554C45;
+    --color3: #807369;
+    --color4: #AA8A6F;
+    --color5: #D59967;
+    --color6: #FFA052;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--color6);
+    margin: 0px;
+    padding: 0px 20px;
+    color: black;
+    font-family: arial black;
+    height: 100%;
+    font-size: 30px;
+}
+
+#left {
+    text-decoration: none;
+    color: inherit; /* übernimmt die Textfarbe vom Header */
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
+}
+
+#container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 90% 10%;
+
+    grid-template-areas: 
+        "header header"
+        "navigation content"
+        "footer footer"
+    ;
+}
+
+
+nav {
+    grid-area: navigation;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color4);
+}
+
+#home {
+    font-family: arial black;
+}
+
+.sidenav a {
+    display: flex;
+    background-color: var(--color4);
+    width: calc(100% - 30px);
+    border-bottom: 2px solid black;
+    margin: 0px;
+    justify-content: start;
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+}
+
+
+main {
+    grid-area: content;
+    border: 2px solid black;
+    text-align: center;
+    background-color: var(--color1);
+    color: white;
+}
+
+main p {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+footer {
+    padding-left: 20px;
+    grid-area: footer;
+    border: 2px solid black;    
+    background-color: var(--color6);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#homebild {
+    margin-top: 30px;
+    max-width: 100%;
+    transition: margin-top 0.5s ease;
+}
+
+@media (max-width: calc(1280px + 10vw)) {
+    #homebild {
+        margin-top: 0;
+        transition: margin-top 0.5s ease;
+    }
+}
+
+
+
