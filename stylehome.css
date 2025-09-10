@@ -17,12 +17,15 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     width: 100%;
     background-color: var(--color6);
     margin: 0px;
-    padding:10px 20px;
-    color: white;
+    padding: 0px 20px;
+    color: black;
+    font-family: arial black;
+    height: 100%;
 }
 
 #container {
@@ -91,11 +94,20 @@ footer {
     grid-area: footer;
     border: 2px solid black;    
     background-color: var(--color6);
+    color: black;
 }
 
 #homebild {
+    margin-top: 30px;
     max-width: 100%;
+    transition: margin-top 0.5s ease;
+}
 
+@media (max-width: calc(1280px + 10vw)) {
+    #homebild {
+        margin-top: 0;
+        transition: margin-top 0.5s ease;
+    }
 }
 
 
