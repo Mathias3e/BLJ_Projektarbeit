@@ -4,8 +4,6 @@ body {
     padding: 0px;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -16,3 +14,51 @@ header {
     padding:10px 20px;
     color: white;
 }
+
+#container {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 90% 10%;
+
+    grid-template-areas: 
+        "header header"
+        "navigation content"
+        "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: navigation;
+    border: 2px solid black;
+}
+
+.navelement {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+main {
+    grid-area: content;
+    border: 2px solid black;
+    /* padding: 20px;  */
+}
+
+footer {
+    grid-area: footer;
+    border: 2px solid black;    
+}
+
+
