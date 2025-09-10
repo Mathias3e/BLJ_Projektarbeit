@@ -1,0 +1,39 @@
+:root {
+    --color1: #332921;
+    --color2: #554C45;
+    --color3: #807369;
+    --color4: #AA8A6F;
+    --color5: #D59967;
+    --color6: #FFA052;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color1);
+}
+
+header {
+    background-image: url("../data/images/Sinnd_About_us.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+    color: white;
+    font-family: 'Arial Bold', sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+#description {
+    margin-top: 10px;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
