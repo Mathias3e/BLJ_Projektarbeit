@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Benutzer nach Commit-Nachricht fragen
-set /p msg=Bitte Commit-Nachricht eingeben [Standard: updated]: 
+set /p msg=Bitte Commit-Nachricht eingeben (updated): 
 
 :: Falls nichts eingegeben wurde, Standardwert setzen
 if "%msg%"=="" set msg=updated
