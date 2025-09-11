@@ -77,9 +77,10 @@ nav {
 main {
     grid-area: content;
     border: 2px solid black;
-    text-align: center;
+    text-align: left;
     background-color: var(--color1);
     color: white;
+    padding-left: 30px;
 }
 
 main p {
@@ -87,7 +88,6 @@ main p {
     margin: 20px auto;
     font-size: 18px;
     line-height: 1.6;
-
 }
 
 footer {
