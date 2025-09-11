@@ -15,6 +15,22 @@ body {
     padding: 0px;
 }
 
+fieldset {
+    width: 200px;
+    padding: 10px;
+}
+
+textarea {
+    width: 186px;
+    height: 60px;
+    resize: none;
+}
+
+input {
+    width: 190px;
+    padding: 0;
+}
+
 #name {
     margin-bottom: 10px;
 }
@@ -77,9 +93,6 @@ nav {
     font-family: Arial;
 }
 
-.sidenav a:hover {
-    background-color: var(--color7);
-}
 
 main {
     grid-area: content;
