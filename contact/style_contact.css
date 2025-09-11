@@ -15,22 +15,6 @@ body {
     padding: 0px;
 }
 
-fieldset {
-    width: 200px;
-    padding: 10px;
-}
-
-textarea {
-    width: 186px;
-    height: 60px;
-    resize: none;
-}
-
-input {
-    width: 190px;
-    padding: 0;
-}
-
 #name {
     margin-bottom: 10px;
 }
