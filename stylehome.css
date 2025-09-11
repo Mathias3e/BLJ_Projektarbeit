@@ -27,7 +27,7 @@ header {
     color: black;
     font-family: arial black;
     height: 100%;
-    font-size: 30px;
+    font-size: 4vh;
     grid-area: header;
     border: 2px solid black;
 }
@@ -55,6 +55,7 @@ nav {
     grid-area: navigation;
     border: 2px solid black;
     display: flex;
+    text-align: left;
     flex-direction: column;
     background-color: var(--color4);
 }
@@ -65,12 +66,11 @@ nav {
 }
 
 .sidenav a {
-    display: flex;
+    /* display: flex; */
     background-color: var(--color4);
     width: calc(100% - 30px);
     border-bottom: 2px solid black;
     margin: 0px;
-    justify-content: start;
     padding: 10px 10px 10px 20px;
     cursor: pointer;
     text-decoration: none;
@@ -89,13 +89,24 @@ main {
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
+
+main h1 {
+    margin-bottom: 30px;
+    font-size: 10vw;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
 
 main p {
     width: 60%;;
     font-size: 18px;
     line-height: 1.6;
-    margin: 20px auto;
+    margin: 0px auto 30px auto;
 }
 
 footer {
@@ -111,11 +122,26 @@ footer {
 }
 
 
+
 @media (max-width: 700px) {
     main {
         background-image: url("./data/images/SINND_Treppe\ dunkel.jpg");
         transition: background-image 0.5s ease-in-out;
+        justify-content: center;
+        transition: justify-content 5s ease-in-out;
     }
+
+    header {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 510px) {
+    main {
+        background-image: url("./data/images/SINND_Treppe\ dunkel-2.jpg");
+        transition: background-image 0.5s ease-in-out;
+    }
+
 }
 
 
