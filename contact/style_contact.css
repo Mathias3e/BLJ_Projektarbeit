@@ -59,10 +59,6 @@ nav {
     background-color: var(--color4);
 }
 
-#home {
-    font-family: arial black;
-}
-
 .sidenav a {
     display: flex;
     background-color: var(--color4);
@@ -108,4 +104,5 @@ footer {
 
 #dark {
     background-color: var(--color7);
+    font-family: arial black;
 }
