@@ -25,7 +25,7 @@ header {
     margin: 0px;
     padding: 0px 20px;
     color: black;
-    font-family: arial black;
+    font-family: Arial Black;
     height: 100%;
     font-size: 30px;
     grid-area: header;
@@ -81,19 +81,17 @@ nav {
 }
 
 main {
+    padding: 20px;
     grid-area: content;
     border: 2px solid black;
     text-align: center;
     background-color: var(--color1);
     color: white;
-}
-
-main p {
-    width: 60%;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.6;
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -113,5 +111,41 @@ footer {
     font-family: arial black;
 }
 
+#eurovisionSchoolSongContest {
+    width: 70%;
+    height: auto;
+    padding: 25px;
+    margin: 0px;
+    background-color: var(--color2);
+    border-radius: 15px;
+}
 
+#eurovisionIframe {
+    width: 50%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    text-align: left;
+    display: block;
+    margin-left: 0;
+}
 
+#eurovisionTitle {
+   text-align: start;
+   margin: 0 0 15px 0;
+}
+
+#eurovisionText {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 50%;
+    text-align: start;
+    margin: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
