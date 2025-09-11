@@ -38,19 +38,29 @@
           <li>Sophia Hentschel</li>
           <li>Jannes Nowusch</li>
         </ul>
-        <form action="https://formlog.offline.ch/log" method="POST">
-          <fieldset>
-            <legend><strong>Kommentar:</strong></legend>
-            <textarea
-              required
-              cols="22"
-              rows="4"
-              name="comment"
-              placeholder="Bemerkung:"
-            ></textarea
-            ><br />
-            <input type="submit" />
-          </fieldset>
+        <h2>Kommentar:</h2>
+        <form
+          action="mailto:sinnd@gmx.ch?subject=Kommentar"
+          method="POST"
+          enctype="text/plain"
+        >
+          <input
+            id="name"
+            type="text"
+            name="Name: "
+            placeholder="Name:"
+            required
+          /><br />
+          <textarea
+            name="Kommentar: "
+            required
+            cols="22"
+            rows="4"
+            name=""
+            placeholder="Bemerkung:"
+          ></textarea
+          ><br />
+          <input type="submit" />
         </form>
       </main>
 

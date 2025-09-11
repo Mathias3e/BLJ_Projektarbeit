@@ -21,7 +21,7 @@ fieldset {
 }
 
 textarea {
-    width: 190px;
+    width: 186px;
     height: 60px;
     resize: none;
 }
@@ -29,7 +29,10 @@ textarea {
 input {
     width: 190px;
     padding: 0;
-    margin: 0;
+}
+
+#name {
+    margin-bottom: 10px;
 }
 
 header {
