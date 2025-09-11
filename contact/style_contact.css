@@ -15,6 +15,18 @@ body {
     padding: 0px;
 }
 
+textarea {
+    width: 177px;
+    height: 60px;
+    resize: none;
+}
+
+input {
+    width: 177px;
+    padding: 0;
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -81,13 +93,13 @@ main {
     background-color: var(--color1);
     color: white;
     padding-left: 30px;
+    line-height: 1.6;
+
 }
 
-main p {
-    width: 60%;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.6;
+main a {
+    color: var(--color5);
+    text-decoration: none;
 }
 
 footer {
