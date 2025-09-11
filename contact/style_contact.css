@@ -15,24 +15,21 @@ body {
     padding: 0px;
 }
 
-fieldset {
-    width: 200px;
-    padding: 10px;
-}
-
 textarea {
     width: 186px;
     height: 60px;
     resize: none;
+    font-size: 14px;
 }
 
 input {
-    width: 190px;
+    width: 192px;
     padding: 0;
 }
 
 #name {
     margin-bottom: 10px;
+    width: 188px;
 }
 
 header {
