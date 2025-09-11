@@ -75,6 +75,9 @@ nav {
     font-family: Arial;
 }
 
+.sidenav a:hover {
+    background-color: var(--color7);
+}
 
 main {
     grid-area: content;
