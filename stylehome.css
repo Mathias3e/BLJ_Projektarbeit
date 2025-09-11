@@ -5,6 +5,7 @@
     --color4: #AA8A6F;
     --color5: #D59967;
     --color6: #FFA052;
+    --color7: #806852;
 }
 
 
@@ -33,7 +34,7 @@ header {
 
 #left {
     text-decoration: none;
-    color: inherit; /* übernimmt die Textfarbe vom Header */
+    color: black;
 }
 
 #container {
@@ -60,6 +61,7 @@ nav {
 
 #home {
     font-family: arial black;
+    background-color: var(--color7);
 }
 
 .sidenav a {
