@@ -27,6 +27,8 @@ header {
     font-family: arial black;
     height: 100%;
     font-size: 30px;
+    grid-area: header;
+    border: 2px solid black;
 }
 
 #left {
@@ -34,10 +36,6 @@ header {
     color: inherit; /* übernimmt die Textfarbe vom Header */
 }
 
-header {
-    grid-area: header;
-    border: 2px solid black;
-}
 
 #container {
     min-height: 100vh;
